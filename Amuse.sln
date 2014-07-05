@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amuse", "Amuse\Amuse.csproj", "{EE985A93-A8E4-4D9E-8EDB-3BAB55423F2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amuse.Demo.Web", "Amuse.Demo.Web\Amuse.Demo.Web.csproj", "{FAB0EABA-128E-47EB-BB89-95FE73494285}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EE985A93-A8E4-4D9E-8EDB-3BAB55423F2E} = {EE985A93-A8E4-4D9E-8EDB-3BAB55423F2E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amuse.Demo.Console", "Amuse.Demo.Console\Amuse.Demo.Console.csproj", "{011FEAC8-EF13-4D37-80A2-5B3C0A1A0B68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amuse.Demo.Interfaces", "Amuse.Demo.Interfaces\Amuse.Demo.Interfaces.csproj", "{9913AC33-5B1C-403D-A443-EA94D23A3E0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amuse.Demo.Impls", "Amuse.Demo.Impls\Amuse.Demo.Impls.csproj", "{7631D932-9F35-46E3-98BC-2D364BB4CB90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE985A93-A8E4-4D9E-8EDB-3BAB55423F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE985A93-A8E4-4D9E-8EDB-3BAB55423F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE985A93-A8E4-4D9E-8EDB-3BAB55423F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE985A93-A8E4-4D9E-8EDB-3BAB55423F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB0EABA-128E-47EB-BB89-95FE73494285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB0EABA-128E-47EB-BB89-95FE73494285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB0EABA-128E-47EB-BB89-95FE73494285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB0EABA-128E-47EB-BB89-95FE73494285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{011FEAC8-EF13-4D37-80A2-5B3C0A1A0B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{011FEAC8-EF13-4D37-80A2-5B3C0A1A0B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{011FEAC8-EF13-4D37-80A2-5B3C0A1A0B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{011FEAC8-EF13-4D37-80A2-5B3C0A1A0B68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9913AC33-5B1C-403D-A443-EA94D23A3E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9913AC33-5B1C-403D-A443-EA94D23A3E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9913AC33-5B1C-403D-A443-EA94D23A3E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9913AC33-5B1C-403D-A443-EA94D23A3E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7631D932-9F35-46E3-98BC-2D364BB4CB90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7631D932-9F35-46E3-98BC-2D364BB4CB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7631D932-9F35-46E3-98BC-2D364BB4CB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7631D932-9F35-46E3-98BC-2D364BB4CB90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

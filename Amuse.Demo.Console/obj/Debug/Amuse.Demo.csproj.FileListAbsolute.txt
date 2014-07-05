@@ -1,0 +1,9 @@
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo\bin\Debug\Amuse.Demo.exe.config
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo\bin\Debug\Amuse.Demo.exe
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo\bin\Debug\Amuse.Demo.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo\obj\Debug\Amuse.Demo.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo\obj\Debug\Amuse.Demo.exe
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo\obj\Debug\Amuse.Demo.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo\bin\Debug\Amuse.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo\bin\Debug\Amuse.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo\bin\Debug\Amuse.xml

@@ -1,0 +1,5 @@
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Library\bin\Release\Amuse.Demo.Library.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Library\bin\Release\Amuse.Demo.Library.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Library\obj\Release\Amuse.Demo.Library.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Library\obj\Release\Amuse.Demo.Library.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Library\obj\Release\Amuse.Demo.Library.pdb
