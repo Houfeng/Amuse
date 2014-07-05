@@ -1,0 +1,13 @@
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Debug\Amuse.Demo.exe.config
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\obj\Debug\Amuse.Demo.exe
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\obj\Debug\Amuse.Demo.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Debug\Amuse.Demo.config
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Debug\Amuse.xsd
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Debug\Amuse.Demo.exe
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Debug\Amuse.Demo.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Debug\Amuse.Demo.Interfaces.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Debug\Amuse.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Debug\Amuse.Demo.Interfaces.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Debug\Amuse.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Debug\Amuse.xml
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\obj\Debug\Amuse.Demo.Console.csprojResolveAssemblyReference.cache
