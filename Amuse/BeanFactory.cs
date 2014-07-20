@@ -23,7 +23,7 @@ namespace Amuse
         private static Dictionary<string, object> singletonCache = new Dictionary<string, object>();
         public object Create(string beanName)
         {
-            return this.FindAndCreate(beanName, beanName);
+            return this.FindAndCreate(beanName);
         }
         public List<object> CreateByGroup(string groupName)
         {
@@ -35,7 +35,11 @@ namespace Amuse
             }
             return instanceList;
         }
-        private object FindAndCreate(string beanName, string startBeanName)
+        private object FindAndCreate(string beanName)
+        {
+            return this.FindAndCreate(beanName, new List<string>());
+        }
+        private object FindAndCreate(string beanName, List<string> injectionLink)
         {
             if (string.IsNullOrWhiteSpace(beanName))
             {
@@ -55,7 +59,8 @@ namespace Amuse
             else
             {
                 instance = this.CreateInstance(bean);
-                instance = this.PropertyInjection(instance, bean, startBeanName);
+                injectionLink.Add(beanName);
+                instance = this.PropertyInjection(instance, bean, injectionLink);
                 //如果不是多例模式，就放入缓存，下次从缓存中获取，实现单例
                 if (bean.Mode != "multiton")
                 {
@@ -87,17 +92,19 @@ namespace Amuse
                 return methodInfo.Invoke(null, null);
             }
         }
-        private object PropertyInjection(object instance, Bean bean, string startBeanName)
+        private object PropertyInjection(object instance, Bean bean, List<string> injectionLink)
         {
             foreach (Property property in bean.Properties)
             {
                 if (property.Ref != null)
                 {
-                    if (property.Ref == startBeanName)
+                    if (injectionLink.Contains(property.Ref))
                     {
-                        throw new CircularDependencyException(string.Format("在‘{0}.{1}’发现循环依赖", bean.Name, property.Name));
+                        injectionLink.Add(property.Ref);
+                        var linkString = string.Join(">", injectionLink.ToArray());
+                        throw new CircularDependencyException(string.Format("在‘{0}.{1}’发现循环依赖，依赖链:‘{2}’", bean.Name, property.Name, linkString));
                     }
-                    var deptInstance = this.FindAndCreate(property.Ref, startBeanName);
+                    var deptInstance = this.FindAndCreate(property.Ref, injectionLink);
                     instance.SetPropertyValue(property.Name, deptInstance);
                 }
                 else if (property.Text != null)

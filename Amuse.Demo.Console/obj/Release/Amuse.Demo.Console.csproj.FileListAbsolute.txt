@@ -1,3 +1,5 @@
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Release\Amuse.Demo.config
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Release\Amuse.xsd
 \\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Release\Amuse.Demo.exe.config
 \\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Release\Amuse.Demo.exe
 \\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Release\Amuse.Demo.pdb
@@ -9,5 +11,3 @@
 \\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\obj\Release\Amuse.Demo.Console.csprojResolveAssemblyReference.cache
 \\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\obj\Release\Amuse.Demo.exe
 \\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\obj\Release\Amuse.Demo.pdb
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Release\Amuse.Demo.config
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Console\bin\Release\Amuse.xsd

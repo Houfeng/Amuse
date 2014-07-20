@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Amuse.Demo.Interfaces;
-using Amuse;
+﻿using Amuse.Demo.Interfaces;
+using System;
 using System.Diagnostics;
 
 namespace Amuse.Demo

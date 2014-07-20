@@ -1,5 +1,4 @@
-﻿using System;
-namespace Amuse.Demo.Interfaces
+﻿namespace Amuse.Demo.Interfaces
 {
     public interface IB
     {
