@@ -109,13 +109,18 @@ namespace Amuse
                 }
                 else if (property.Text != null)
                 {
-                    PropertyInfo propertyInfo = instance.GetProperties().FirstOrDefault(p => p.Name == property.Name);
+                    PropertyInfo propertyInfo = instance.GetProperties()
+                        .FirstOrDefault(p => p.Name == property.Name);
                     if (propertyInfo == null)
                     {
                         throw new PropertyNotFoundException(string.Format("‘{0}’的‘{1}’没有找到", bean.Class, property.Name));
                     }
-                    var properyValue = this.Serializer.Deserialize(property.Text, propertyInfo.PropertyType);
-                    instance.SetPropertyValue(property.Name, property.Text);
+                    var propertyValue = property.Text.ConvertTo(propertyInfo.PropertyType, null);
+                    if (propertyValue == null)
+                    {
+                        propertyValue = this.Serializer.Deserialize(property.Text, propertyInfo.PropertyType);
+                    }
+                    instance.SetPropertyValue(property.Name, propertyValue);
                 }
             }
             return instance;

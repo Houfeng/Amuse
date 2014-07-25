@@ -63,7 +63,11 @@ namespace Amuse.Models
             XmlNode valueNode = properyNode.SelectSingleNode("./amuse:value", nsMgr);
             if (valueNode != null)
             {
-                property.Text = valueNode.InnerText;
+                property.Text = (valueNode.InnerText ?? "").Trim();
+            }
+            else
+            {
+                property.Text = null;
             }
             return property;
         }
