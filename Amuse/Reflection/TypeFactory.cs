@@ -4,19 +4,19 @@ using System.Reflection;
 
 namespace Amuse.Reflection
 {
-    public class TypeCache
+    public class TypeFactory
     {
-        private static object m_mutex = new object();
-        private static Dictionary<string, Type> m_cache = new Dictionary<string, Type>();
+        private static object Locker = new object();
+        private static Dictionary<string, Type> Cache = new Dictionary<string, Type>();
 
         public static Type GetType(string typeFullName)
         {
             Type type;
-            if (m_cache.TryGetValue(typeFullName, out type))
+            if (Cache.TryGetValue(typeFullName, out type))
             {
                 return type;
             }
-            lock (m_mutex)
+            lock (Locker)
             {
                 Assembly[] allAssembly = AppDomain.CurrentDomain.GetAssemblies();
                 foreach (Assembly ass in allAssembly)
@@ -25,23 +25,23 @@ namespace Amuse.Reflection
                     if (type != null)
                         break;
                 }
-                m_cache[typeFullName] = type;
+                Cache[typeFullName] = type;
                 return type;
             }
         }
         public static Type GetType(string typeFullName, string assemblyFile)
         {
-            if (string.IsNullOrWhiteSpace(assemblyFile))
+            if (string.IsNullOrEmpty(assemblyFile))
             {
                 return GetType(typeFullName);
             }
             string cacheKey = string.Format("{0}::{1}", assemblyFile, typeFullName);
             Type type;
-            if (m_cache.TryGetValue(cacheKey, out type))
+            if (Cache.TryGetValue(cacheKey, out type))
             {
                 return type;
             }
-            lock (m_mutex)
+            lock (Locker)
             {
                 Assembly assembly = Assembly.LoadWithPartialName(assemblyFile);
                 if (assembly == null)
@@ -53,7 +53,7 @@ namespace Amuse.Reflection
                     assembly = Assembly.LoadFrom(assemblyFile);
                 }
                 type = assembly.GetType(typeFullName);
-                m_cache[cacheKey] = type;
+                Cache[cacheKey] = type;
                 return type;
             }
         }

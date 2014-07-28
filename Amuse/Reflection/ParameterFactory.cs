@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace Amuse.Reflection
 {
-    public class ParameterCache
+    public class ParameterFactory
     {
         private static object m_mutex = new object();
         private static Dictionary<MethodInfo, ParameterInfo[]> ParameterInfoListCache = new Dictionary<MethodInfo, ParameterInfo[]>();

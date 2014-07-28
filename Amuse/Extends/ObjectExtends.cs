@@ -47,10 +47,10 @@ namespace Amuse.Extends
         {
             try
             {
-                MethodInfo methodInfo = MethodCache.GetMethodInfo(entity.GetType(), methodName);
+                MethodInfo methodInfo = MethodFactory.GetMethodInfo(entity.GetType(), methodName);
                 if (methodInfo != null)
                 {
-                    ParameterInfo[] pareameterInfos = ParameterCache.GetPropertyInfo(methodInfo);
+                    ParameterInfo[] pareameterInfos = ParameterFactory.GetPropertyInfo(methodInfo);
                     return methodInfo.Invoke(entity, parameters);
                 }
                 else
@@ -65,7 +65,7 @@ namespace Amuse.Extends
         }
         public static void SetPropertyValue(this object entity, string propertyName, object value)
         {
-            PropertyInfo property = PropertyCache.GetPropertyInfo(entity.GetType(), propertyName);
+            PropertyInfo property = PropertyFactory.GetPropertyInfo(entity.GetType(), propertyName);
             if (property != null)
             {
                 property.SetValue(entity, value.ConvertTo(property.PropertyType), null);
@@ -73,7 +73,7 @@ namespace Amuse.Extends
         }
         public static object GetPropertyValue(this object entity, string propertyName)
         {
-            PropertyInfo property = PropertyCache.GetPropertyInfo(entity.GetType(), propertyName);
+            PropertyInfo property = PropertyFactory.GetPropertyInfo(entity.GetType(), propertyName);
             if (property != null)
                 return property.GetValue(entity, null);
             return null;

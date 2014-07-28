@@ -73,7 +73,7 @@ namespace Amuse
         {
             bean.Class = bean.Class ?? "";
             string[] beanClassInfo = bean.Class.Split(',');
-            Type beanType = beanClassInfo.Length > 1 ? TypeCache.GetType(beanClassInfo[0], beanClassInfo[1]) : TypeCache.GetType(beanClassInfo[0]);
+            Type beanType = beanClassInfo.Length > 1 ? TypeFactory.GetType(beanClassInfo[0], beanClassInfo[1]) : TypeFactory.GetType(beanClassInfo[0]);
             if (beanType == null)
             {
                 throw new TypeNotFoundException(string.Format("‘{0}’ 没有找到", bean.Class));
@@ -84,7 +84,7 @@ namespace Amuse
             }
             else
             {
-                MethodInfo methodInfo = MethodCache.GetMethodInfo(beanType, bean.FactoryMethod);
+                MethodInfo methodInfo = MethodFactory.GetMethodInfo(beanType, bean.FactoryMethod);
                 if (methodInfo == null)
                 {
                     throw new MethodNotFoundException(string.Format("‘{0}’的‘{1}’没有找到", bean.Class, bean.FactoryMethod));

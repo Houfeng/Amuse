@@ -65,11 +65,11 @@
     <Compile Include="Models\Bean.cs" />
     <Compile Include="Models\Property.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reflection\InstanceCache.cs" />
-    <Compile Include="Reflection\MethodCache.cs" />
-    <Compile Include="Reflection\ParameterCache.cs" />
-    <Compile Include="Reflection\PropertyCache.cs" />
-    <Compile Include="Reflection\TypeCache.cs" />
+    <Compile Include="Reflection\InstanceFactory.cs" />
+    <Compile Include="Reflection\MethodFactory.cs" />
+    <Compile Include="Reflection\ParameterFactory.cs" />
+    <Compile Include="Reflection\PropertyFactory.cs" />
+    <Compile Include="Reflection\TypeFactory.cs" />
     <Compile Include="Serializes\ISerializer.cs" />
     <Compile Include="Serializes\JsonSerializer.cs" />
     <Compile Include="Serializes\XmlSerializer.cs" />

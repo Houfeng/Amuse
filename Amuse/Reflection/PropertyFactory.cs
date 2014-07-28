@@ -14,9 +14,9 @@ using System.Reflection;
 
 namespace Amuse.Reflection
 {
-    public static class PropertyCache
+    public static class PropertyFactory
     {
-        private static object m_mutex = new object();
+        private static object Locker = new object();
         private static Dictionary<Type, PropertyInfo[]> piListCache = new Dictionary<Type, PropertyInfo[]>();
         private static Dictionary<Type, Dictionary<string, PropertyInfo>> piCache = new Dictionary<Type, Dictionary<string, PropertyInfo>>();
         public static PropertyInfo GetPropertyInfo(Type type, string propertyName)
@@ -29,7 +29,7 @@ namespace Amuse.Reflection
                     return propertyInfo;
             }
             //----
-            lock (m_mutex)
+            lock (Locker)
             {
                 if (!piCache.ContainsKey(type))
                     piCache[type] = new Dictionary<string, PropertyInfo>();
