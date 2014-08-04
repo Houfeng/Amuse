@@ -16,10 +16,10 @@ namespace Amuse.Extends
             }
             return default(T);
         }
-        public static List<T> GetAttributes<T>(this MethodInfo method)
+        public static List<T> GetAttributes<T>(this Type type)
         {
             List<T> attrList = new List<T>();
-            object[] attributes = method.GetCustomAttributes(true);
+            object[] attributes = type.GetCustomAttributes(true);
             foreach (object att in attributes)
             {
                 if (att is T)

@@ -15,10 +15,10 @@ namespace Amuse.Extends
             }
             return default(T);
         }
-        public static List<T> GetAttributes<T>(this MethodInfo method)
+        public static List<T> GetAttributes<T>(this PropertyInfo property)
         {
             List<T> attrList = new List<T>();
-            object[] attributes = method.GetCustomAttributes(true);
+            object[] attributes = property.GetCustomAttributes(true);
             foreach (object att in attributes)
             {
                 if (att is T)
