@@ -1,8 +1,0 @@
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Debug\Amuse.dll
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Debug\Amuse.pdb
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\obj\Debug\Amuse.dll
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\obj\Debug\Amuse.pdb
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Debug\Amuse.XML
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Debug\Amuse.Demo.config
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Debug\Amuse.xsd
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\obj\Debug\Amuse.csprojResolveAssemblyReference.cache

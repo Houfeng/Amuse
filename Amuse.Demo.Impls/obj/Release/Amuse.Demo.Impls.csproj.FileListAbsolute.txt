@@ -1,7 +1,0 @@
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Impls\bin\Release\Amuse.Demo.Impls.dll
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Impls\bin\Release\Amuse.Demo.Impls.pdb
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Impls\bin\Release\Amuse.Demo.Interfaces.dll
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Impls\bin\Release\Amuse.Demo.Interfaces.pdb
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Impls\obj\Release\Amuse.Demo.Impls.csprojResolveAssemblyReference.cache
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Impls\obj\Release\Amuse.Demo.Impls.dll
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Impls\obj\Release\Amuse.Demo.Impls.pdb

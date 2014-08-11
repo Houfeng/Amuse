@@ -1,5 +1,0 @@
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Interfaces\bin\Debug\Amuse.Demo.Interfaces.dll
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Interfaces\bin\Debug\Amuse.Demo.Interfaces.pdb
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Interfaces\obj\Debug\Amuse.Demo.Interfaces.csprojResolveAssemblyReference.cache
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Interfaces\obj\Debug\Amuse.Demo.Interfaces.dll
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Interfaces\obj\Debug\Amuse.Demo.Interfaces.pdb

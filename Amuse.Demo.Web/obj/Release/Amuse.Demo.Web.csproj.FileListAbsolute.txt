@@ -1,5 +1,0 @@
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Web\bin\Amuse.Demo.Web.dll.config
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Web\bin\Amuse.Demo.Web.dll
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Web\bin\Amuse.Demo.Web.pdb
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Web\obj\Release\Amuse.Demo.Web.dll
-\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Web\obj\Release\Amuse.Demo.Web.pdb
