@@ -25,7 +25,7 @@ namespace Amuse
             {
                 if (!File.Exists(configFile))
                 {
-                    throw new ConfigNotFoundException(string.Format("‘{0}’ 容器配置文件没有找到,也没没有发现名为‘{0}’的 AppSetting 配置节", configFile));
+                    throw new ObjectNotFoundException(string.Format("‘{0}’ 容器配置文件没有找到,也没没有发现名为 ‘{0}’ 的 AppSetting 配置节。", configFile));
                 }
                 if (!ContainerCache.ContainsKey(configFile))
                 {

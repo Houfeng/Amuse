@@ -27,10 +27,7 @@ namespace Amuse.Demo
                 Console.WriteLine(string.Format("第 {0} 查找并装配对象: {1}ms", i, watch.ElapsedMilliseconds));
                 watch.Stop();
             }
-            DateTime dt = new DateTime();
-            Console.WriteLine(dt.GetType());
-            object ab = (object)dt;
-            Console.WriteLine(ab.GetType());
+
             Console.Read();
         }
     }

@@ -48,9 +48,14 @@
     <None Include="App.config" />
     <None Include="Amuse.config">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Amuse.Demo.Impls\Amuse.Demo.Impls.csproj">
+      <Project>{7631d932-9f35-46e3-98bc-2d364bb4cb90}</Project>
+      <Name>Amuse.Demo.Impls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Amuse.Demo.Interfaces\Amuse.Demo.Interfaces.csproj">
       <Project>{9913ac33-5b1c-403d-a443-ea94d23a3e0a}</Project>
       <Name>Amuse.Demo.Interfaces</Name>

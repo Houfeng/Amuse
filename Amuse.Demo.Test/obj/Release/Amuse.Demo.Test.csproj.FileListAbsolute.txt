@@ -1,0 +1,14 @@
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.xsd
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.config
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.Demo.Test.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.Demo.Test.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.Demo.Impls.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.Demo.Interfaces.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.Demo.Impls.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.Demo.Interfaces.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\bin\Release\Amuse.xml
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\obj\Release\Amuse.Demo.Test.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\obj\Release\Amuse.Demo.Test.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse.Demo.Test\obj\Release\Amuse.Demo.Test.pdb

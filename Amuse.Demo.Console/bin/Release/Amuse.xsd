@@ -11,20 +11,44 @@
       <xs:sequence maxOccurs="unbounded" minOccurs="0">
         <xs:element name="bean" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
-            <xs:sequence maxOccurs="unbounded" minOccurs="0">
+            <xs:choice  minOccurs="0" maxOccurs="unbounded">
               <xs:element name="property">
                 <xs:complexType mixed="true">
-                  <xs:sequence maxOccurs="1" minOccurs="0">
-                    <xs:element name="value" type="xs:string">
+                  <xs:attribute name="name" type="xs:string" use="required"/>
+                  <xs:attribute name="ref" type="xs:string"/>
+                  <xs:attribute name="type" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="method">
+                <xs:complexType mixed="true">
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="parameter">
+                      <xs:complexType mixed="true">
+                        <xs:attribute name="name" type="xs:string" use="required"/>
+                        <xs:attribute name="ref" type="xs:string"/>
+                        <xs:attribute name="type" type="xs:string"/>
+                      </xs:complexType>
                     </xs:element>
                   </xs:sequence>
                   <xs:attribute name="name" type="xs:string" use="required"/>
-                  <xs:attribute name="ref" type="xs:string"/>
                 </xs:complexType>
               </xs:element>
-            </xs:sequence>
+              <xs:element name="constructor">
+                <xs:complexType mixed="true">
+                  <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="parameter">
+                      <xs:complexType mixed="true">
+                        <xs:attribute name="name" type="xs:string" use="required"/>
+                        <xs:attribute name="ref" type="xs:string"/>
+                        <xs:attribute name="type" type="xs:string"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
             <xs:attribute name="name" type="xs:string" use="required"/>
-            <xs:attribute name="class" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="xs:string" use="required"/>
             <xs:attribute name="factory-method" type="xs:string"/>
             <xs:attribute name="mode" type="modeType"/>
             <xs:attribute name="group" type="xs:string"/>

@@ -47,13 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exceptions\MethodNotFoundException.cs" />
-    <Compile Include="Exceptions\PropertyExtistException.cs" />
     <Compile Include="Exceptions\CircularDependencyException.cs" />
-    <Compile Include="Exceptions\NotFoundBeanException.cs" />
-    <Compile Include="Exceptions\ConfigNotFoundException.cs" />
-    <Compile Include="Exceptions\PropertyNotFoundException.cs" />
-    <Compile Include="Exceptions\TypeNotFoundException.cs" />
+    <Compile Include="Exceptions\ObjectNotFoundException.cs" />
+    <Compile Include="Exceptions\ObjectNotUniqueException.cs" />
     <Compile Include="Extends\MethodExtends.cs" />
     <Compile Include="Extends\ObjectExtends.cs" />
     <Compile Include="Extends\PropertyExtends.cs" />
@@ -61,8 +57,11 @@
     <Compile Include="BeanFactory.cs" />
     <Compile Include="Models\Beans.cs" />
     <Compile Include="Container.cs" />
-    <Compile Include="Exceptions\BeanExtistException.cs" />
+    <Compile Include="Exceptions\ObjectExtistException.cs" />
     <Compile Include="Models\Bean.cs" />
+    <Compile Include="Models\Constructor.cs" />
+    <Compile Include="Models\Method.cs" />
+    <Compile Include="Models\Parameter.cs" />
     <Compile Include="Models\Property.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\InstanceFactory.cs" />
@@ -75,8 +74,9 @@
     <Compile Include="Serializes\XmlSerializer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Amuse.Demo.config">
+    <None Include="Amuse.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Amuse.xsd">
       <SubType>Designer</SubType>
