@@ -1,0 +1,7 @@
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Release\Amuse.config
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Release\Amuse.xsd
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Release\Amuse.XML
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Release\Amuse.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Release\Amuse.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\obj\Release\Amuse.dll
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\obj\Release\Amuse.pdb
