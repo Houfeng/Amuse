@@ -61,8 +61,10 @@
     <Compile Include="Models\Bean.cs" />
     <Compile Include="Models\Constructor.cs" />
     <Compile Include="Models\Method.cs" />
+    <Compile Include="Models\ModeType.cs" />
     <Compile Include="Models\Parameter.cs" />
     <Compile Include="Models\Property.cs" />
+    <Compile Include="Models\TrimType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\InstanceFactory.cs" />
     <Compile Include="Reflection\MethodFactory.cs" />

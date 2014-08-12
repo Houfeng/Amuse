@@ -10,6 +10,7 @@ namespace Amuse.Models
         public virtual Bean Bean { private set; get; }
         public virtual string Name { get; set; }
         public virtual string Ref { get; set; }
+        public virtual string Trim { get; set; }
         public virtual string Value { get; set; }
         public virtual string Type { get; set; }
     }

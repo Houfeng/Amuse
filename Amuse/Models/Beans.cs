@@ -103,7 +103,12 @@ namespace Amuse.Models
             {
                 property.SetPropertyValue(ToTitleCase(attr.Name), attr.Value);
             }
-            property.Value = propertyNode.InnerText;
+            property.Value = propertyNode.InnerText ?? "";
+            if (string.IsNullOrWhiteSpace(property.Trim)
+                || property.Trim == TrimType.Both)
+            {
+                property.Value = property.Value.Trim();
+            }
             return property;
         }
 
@@ -165,7 +170,12 @@ namespace Amuse.Models
             {
                 parameter.SetPropertyValue(ToTitleCase(attr.Name), attr.Value);
             }
-            parameter.Value = parameterNode.InnerText;
+            parameter.Value = parameterNode.InnerText ?? "";
+            if (string.IsNullOrWhiteSpace(parameter.Trim)
+                || parameter.Trim == TrimType.Both)
+            {
+                parameter.Value = parameter.Value.Trim();
+            }
             return parameter;
         }
 

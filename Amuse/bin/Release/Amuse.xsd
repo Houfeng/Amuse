@@ -17,6 +17,7 @@
                   <xs:attribute name="name" type="xs:string" use="required"/>
                   <xs:attribute name="ref" type="xs:string"/>
                   <xs:attribute name="type" type="xs:string"/>
+                  <xs:attribute name="trim" type="trimType"/>
                 </xs:complexType>
               </xs:element>
               <xs:element name="method">
@@ -27,6 +28,7 @@
                         <xs:attribute name="name" type="xs:string" use="required"/>
                         <xs:attribute name="ref" type="xs:string"/>
                         <xs:attribute name="type" type="xs:string"/>
+                        <xs:attribute name="trim" type="trimType"/>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
@@ -41,6 +43,7 @@
                         <xs:attribute name="name" type="xs:string" use="required"/>
                         <xs:attribute name="ref" type="xs:string"/>
                         <xs:attribute name="type" type="xs:string"/>
+                        <xs:attribute name="trim" type="trimType"/>
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
@@ -58,11 +61,19 @@
     </xs:complexType>
   </xs:element>
 
-  <!--类型的模型-->
+  <!--实例模式类型-->
   <xs:simpleType name="modeType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="singleton"/>
       <xs:enumeration value="multiton"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--字符修剪类型-->
+  <xs:simpleType name="trimType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="normal"/>
+      <xs:enumeration value="both"/>
     </xs:restriction>
   </xs:simpleType>
 

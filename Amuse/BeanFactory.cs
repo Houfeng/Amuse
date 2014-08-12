@@ -63,8 +63,9 @@ namespace Amuse
                 instance = this.CreateInstance(bean, injectionLink);
                 instance = this.PropertyInjection(instance, bean, injectionLink);
                 instance = this.MethodInjection(instance, bean, injectionLink);
-                //如果不是多例模式，就放入缓存，下次从缓存中获取，实现单例
-                if (bean.Mode != "multiton")
+                //如果单例模式，就放入缓存，下次从缓存中获取，实现单例
+                if (string.IsNullOrWhiteSpace(bean.Mode)
+                    || bean.Mode == ModeType.Singleton)
                 {
                     singletonCache[beanName] = instance;
                 }

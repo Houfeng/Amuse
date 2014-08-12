@@ -5,3 +5,4 @@
 \\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\bin\Release\Amuse.pdb
 \\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\obj\Release\Amuse.dll
 \\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\obj\Release\Amuse.pdb
+\\psf\Home\Desktop\dev\MyProjects\Amuse\Amuse\obj\Release\Amuse.csprojResolveAssemblyReference.cache
