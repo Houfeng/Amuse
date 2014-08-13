@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amuse", "Amuse\Amuse.csproj", "{EE985A93-A8E4-4D9E-8EDB-3BAB55423F2E}"
 EndProject
@@ -17,6 +17,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amuse.Demo.Impls", "Amuse.Demo.Impls\Amuse.Demo.Impls.csproj", "{7631D932-9F35-46E3-98BC-2D364BB4CB90}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amuse.Demo.Test", "Amuse.Demo.Test\Amuse.Demo.Test.csproj", "{82FBCA25-53D3-499D-8199-35884B020F6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CFA16073-DDBC-40D6-93F9-A475E01E0762}"
+	ProjectSection(SolutionItems) = preProject
+		CNAME = CNAME
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
