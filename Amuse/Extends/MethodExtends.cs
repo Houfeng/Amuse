@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Amuse.Reflection;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace Amuse.Extends
@@ -7,28 +8,11 @@ namespace Amuse.Extends
     {
         public static T GetAttribute<T>(this MethodInfo method)
         {
-            object[] attributes = method.GetCustomAttributes(true);
-            foreach (object att in attributes)
-            {
-                if (att is T)
-                {
-                    return (T)att;
-                }
-            }
-            return default(T);
+            return AttributeFactory.GetAttribute<T>(method);
         }
         public static List<T> GetAttributes<T>(this MethodInfo method)
         {
-            List<T> attrList = new List<T>();
-            object[] attributes = method.GetCustomAttributes(true);
-            foreach (object att in attributes)
-            {
-                if (att is T)
-                {
-                    attrList.Add((T)att);
-                }
-            }
-            return attrList;
+            return AttributeFactory.GetAttributes<T>(method);
         }
     }
 }

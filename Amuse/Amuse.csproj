@@ -66,6 +66,7 @@
     <Compile Include="Models\Property.cs" />
     <Compile Include="Models\TrimType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\AttributeFactory.cs" />
     <Compile Include="Reflection\InstanceFactory.cs" />
     <Compile Include="Reflection\MethodFactory.cs" />
     <Compile Include="Reflection\ParameterFactory.cs" />

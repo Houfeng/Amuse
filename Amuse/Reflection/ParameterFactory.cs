@@ -5,15 +5,18 @@ namespace Amuse.Reflection
 {
     public class ParameterFactory
     {
-        private static object m_mutex = new object();
-        private static Dictionary<MethodInfo, ParameterInfo[]> ParameterInfoListCache = new Dictionary<MethodInfo, ParameterInfo[]>();
-        public static ParameterInfo[] GetPropertyInfo(MethodInfo methodInfo)
+        private static object locker = new object();
+        private static Dictionary<MethodInfo, ParameterInfo[]> parameterInfoListCache = new Dictionary<MethodInfo, ParameterInfo[]>();
+        public static ParameterInfo[] GetParameterInfos(MethodInfo methodInfo)
         {
             ParameterInfo[] pList;
-            if (ParameterInfoListCache.TryGetValue(methodInfo, out pList))
+            if (parameterInfoListCache.TryGetValue(methodInfo, out pList))
                 return pList;
-            ParameterInfoListCache[methodInfo] = methodInfo.GetParameters();
-            return ParameterInfoListCache[methodInfo];
+            lock (locker)
+            {
+                parameterInfoListCache[methodInfo] = methodInfo.GetParameters();
+            }
+            return parameterInfoListCache[methodInfo];
         }
 
     }

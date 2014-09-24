@@ -50,7 +50,7 @@ namespace Amuse.Extends
                 MethodInfo methodInfo = MethodFactory.GetMethodInfo(entity.GetType(), methodName);
                 if (methodInfo != null)
                 {
-                    ParameterInfo[] pareameterInfos = ParameterFactory.GetPropertyInfo(methodInfo);
+                    ParameterInfo[] pareameterInfos = ParameterFactory.GetParameterInfos(methodInfo);
                     return methodInfo.Invoke(entity, parameters);
                 }
                 else
@@ -78,13 +78,22 @@ namespace Amuse.Extends
                 return property.GetValue(entity, null);
             return null;
         }
+        public static PropertyInfo[] GetPropertyInfos(this object entity)
+        {
+            return PropertyFactory.GetPropertyInfos(entity.GetType());
+        }
+        public static MethodInfo[] GetMethodInfos(this object entity)
+        {
+            return MethodFactory.GetMethodInfos(entity.GetType());
+        }
         public static PropertyInfo[] GetProperties(this object entity)
         {
-            return entity.GetType().GetProperties();
+            return PropertyFactory.GetPropertyInfos(entity.GetType());
         }
         public static MethodInfo[] GetMethods(this object entity)
         {
-            return entity.GetType().GetMethods();
+            return MethodFactory.GetMethodInfos(entity.GetType());
         }
+
     }
 }

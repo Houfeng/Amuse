@@ -17,12 +17,13 @@ namespace Amuse.Reflection
     public static class PropertyFactory
     {
         private static object Locker = new object();
-        private static Dictionary<Type, PropertyInfo[]> piListCache = new Dictionary<Type, PropertyInfo[]>();
-        private static Dictionary<Type, Dictionary<string, PropertyInfo>> piCache = new Dictionary<Type, Dictionary<string, PropertyInfo>>();
+        private static object listLocker = new object();
+        private static Dictionary<Type, PropertyInfo[]> propertyListCache = new Dictionary<Type, PropertyInfo[]>();
+        private static Dictionary<Type, Dictionary<string, PropertyInfo>> typePropertyCache = new Dictionary<Type, Dictionary<string, PropertyInfo>>();
         public static PropertyInfo GetPropertyInfo(Type type, string propertyName)
         {
             Dictionary<string, PropertyInfo> propertyCache;
-            if (piCache.TryGetValue(type, out propertyCache))
+            if (typePropertyCache.TryGetValue(type, out propertyCache))
             {
                 PropertyInfo propertyInfo;
                 if (propertyCache.TryGetValue(propertyName, out propertyInfo))
@@ -31,20 +32,23 @@ namespace Amuse.Reflection
             //----
             lock (Locker)
             {
-                if (!piCache.ContainsKey(type))
-                    piCache[type] = new Dictionary<string, PropertyInfo>();
+                if (!typePropertyCache.ContainsKey(type))
+                    typePropertyCache[type] = new Dictionary<string, PropertyInfo>();
                 PropertyInfo property = type.GetProperty(propertyName);
-                piCache[type][propertyName] = property;
+                typePropertyCache[type][propertyName] = property;
                 return property;
             }
         }
-        public static PropertyInfo[] GetPropertyInfo(Type type)
+        public static PropertyInfo[] GetPropertyInfos(Type type)
         {
             PropertyInfo[] piList;
-            if (piListCache.TryGetValue(type, out piList))
+            if (propertyListCache.TryGetValue(type, out piList))
                 return piList;
-            piListCache[type] = type.GetProperties();
-            return piListCache[type];
+            lock (listLocker)
+            {
+                propertyListCache[type] = type.GetProperties();
+            }
+            return propertyListCache[type];
         }
     }
 }
